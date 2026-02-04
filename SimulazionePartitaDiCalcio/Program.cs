@@ -285,10 +285,7 @@ namespace SimulazionePartitaCalcio
 
         }//fine cartellino rosso
 
-        // Il problema è che la sostituzione non aggiorna correttamente i valori nei vettori titolari2 e panchina2.
-        // Inoltre, la logica di sostituzione per la squadra 2 sta usando panchina1 e titolari1 invece di panchina2 e titolari2.
-        // Ecco la correzione della parte relativa alla squadra 2:
-
+        
         static void sostituzioni(int[] titolari1, int[] titolari2, int[] panchina1, int[] panchina2, ref int contaSost1, ref int contaSost2)
         {
             int maxP = -1000, minT = 1000;
