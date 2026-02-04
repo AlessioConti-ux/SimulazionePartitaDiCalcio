@@ -101,17 +101,7 @@ namespace SimulazionePartitaCalcio
             }
 
         }//fine funzione gol
-
-        static void infortunio()
-        { //funzione infortunio
-
-            Random rng = new Random();
-
-            int inf = rng.Next(1, 8); //genera un numero da 1 a 2 per vedere quale squadra ha l'infortunio
-
-        }
-
-
+        
         static void potScuadra(int[] titolari1, int[] titolari2, ref int potenzaS1, ref int potenzaS2)
         {//inizio pot scquadra
 
@@ -315,7 +305,7 @@ namespace SimulazionePartitaCalcio
                     Console.WriteLine("La scquadra n.1 effettua una sostituzione");
 
                     int posto1 = 0, posto2 = 0;
-                    for (int i = 0; i < titolari1.Length; i++)
+                    for (int i = 0; i < titolari1.Length; i++) //trova quello con meno potenza
                     {
                         if (titolari1[i] < minT)
                         {
@@ -324,7 +314,7 @@ namespace SimulazionePartitaCalcio
                         }
                     }
 
-                    for (int j = 0; j < panchina1.Length; j++)
+                    for (int j = 0; j < panchina1.Length; j++) //trova quello con piu potenza
                     {
                         if (panchina1[j] > maxP)
                         {
