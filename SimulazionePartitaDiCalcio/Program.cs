@@ -321,7 +321,7 @@ namespace SimulazionePartitaCalcio
                     }
 
                     // Effettua la sostituzione
-                    int temp = titolari1[posto1];
+                    int temp = titolari1[posto1]; //variabile che salva giovcatre
                     titolari1[posto1] = panchina1[posto2];
                     panchina1[posto2] = temp;
                 }
